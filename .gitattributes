@@ -1,5 +1,3 @@
-*.swift linguist-language=objective-c
-
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
