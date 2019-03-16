@@ -27,7 +27,7 @@ void PrintMenu(int n, SLINK *head)
 		printf("**************欢迎使用学生信息管理系统**************\n");
 		printf("*            (当前共有学生个数：%-5d)             *\n", count);
 		printf("*          -----------------------------           *\n");
-		printf("*          |      开发者：冯天阳       |           *\n");
+		printf("*          |    开发者：FtyLollipop    |           *\n");
 		printf("*          -----------------------------           *\n");
 		printf("*                                                  *\n");
 		printf("*          1)添加学生信息                          *\n");
