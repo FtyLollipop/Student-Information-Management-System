@@ -31,6 +31,9 @@ SLINK *Edit(SLINK *head)
 	system("cls");
 	printf("***************修改学生信息(根据学号)***************\n\n");
 	num = IntInput("输入要修改的学生学号：", "只能为0~99999的整数!", 0, 99999);
+
+	if (p == NULL)	//若数据为空则直接返回NULL
+		return NULL;
 	do
 	{
 		if (p->stu.num == num)

@@ -19,8 +19,7 @@ SLINK *Remove(SLINK *head)
 	extern void PrintInfo(SLINK *head, int n);
 
 	SLINK *p = head->next,	//忽略链表头
-	//创建待删除项链表头
-		*p1 = (SLINK*)malloc(sizeof(SLINK));
+		*p1 = (SLINK*)malloc(sizeof(SLINK));	//创建待删除项链表头
 	p1->stu.num = -1;
 	p1->next = NULL;
 	int num = 0;	//待删除学号
@@ -28,6 +27,9 @@ SLINK *Remove(SLINK *head)
 	system("cls");
 	printf("***************删除学生信息(根据学号)***************\n\n");
 	num = IntInput("输入要删除的学号：", "只能输入0~99999的整数!", 0, 99999);
+
+	if (p == NULL)	//若数据为空则直接返回NULL
+		return NULL;
 	do
 	{
 		if (p->stu.num == num)
